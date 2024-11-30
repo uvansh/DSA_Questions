@@ -23,7 +23,6 @@ int getWater(int arr[],int size)
 
 
 
-
 int main(){
     int arr[] = {5,0,6,2,3};
     int size = sizeof(arr)/sizeof(arr[0]);

@@ -1,22 +1,24 @@
 #include<iostream>
 using namespace std;
 
+
 //Sorted Array
 void frequency(int arr[],int size){
-    int freq = 1,i=1;
-    while(i<size){
-        while(i<size && arr[i]==arr[i-1]){
-            freq++;
-            i++;
+    if(size == 0) return;
+
+    int count = 1;
+    for(int i = 1;i<size;i++){
+        if(arr[i] == arr[i-1]){
+            count++;
         }
-        cout<<arr[i]<<" ";
-        i++;
-        freq=1;
+        else{
+            cout<<arr[i-1]<<" "<<count<<endl;
+            count=1; //reseting count to 1
+        }
     }
-    if(size==1|| arr[size-1]!=arr[size-2]){
-        cout<<arr[size-1]<<" "+1;
-    }
+    cout<<arr[size-1]<<" "<<count<<endl;
 }
+
 
 int main()
 {

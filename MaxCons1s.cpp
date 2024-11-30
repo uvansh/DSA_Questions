@@ -16,7 +16,6 @@ int max1s(int arr[],int size){
 }
 
 
-
 int main(){
     int arr[] = {1,0,0,1,1,1,0,1,1,0,0};
     int size = sizeof(arr)/sizeof(arr[0]);

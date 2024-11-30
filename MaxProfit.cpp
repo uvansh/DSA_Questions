@@ -26,6 +26,8 @@ int MaxProfit(int arr[], int start, int end)
     return profit;
 }
 
+
+//Efficient implementation
 int MaxProfit2(int arr[],int size)
 {
     int profit = 0;
@@ -36,7 +38,6 @@ int MaxProfit2(int arr[],int size)
     }
     return profit;
 }
-
 
 
 int main()
