@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
 
+//Not Sliding Window (Naive Implementation).
 int MaxSum(int arr[],int size,int k){
     
     int res = 0;
@@ -14,6 +15,8 @@ int MaxSum(int arr[],int size,int k){
     return res;
 }
 
+
+//Sliding window technique.
 int MaxSum2(int arr[],int size,int k){
     
     int res = 0;
@@ -28,6 +31,8 @@ int MaxSum2(int arr[],int size,int k){
     }
     return res;
 }
+
+
 
 int main(){
     int arr[] = {1,8,20,-5,20,7};
