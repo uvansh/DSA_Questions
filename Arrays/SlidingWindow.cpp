@@ -24,6 +24,7 @@ int MaxSum2(int arr[],int size,int k){
     for(int i = 0;i<k;i++){
         window += arr[i];
     }
+
     res = window; // Initialize the result with the first window sum
     for(int i = k;i<size;i++){
         window += arr[i] - arr[i-k]; //i-k = 0 index for first iteration

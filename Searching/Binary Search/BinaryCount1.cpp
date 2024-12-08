@@ -14,7 +14,7 @@ int countOne(int arr[], int size)
         }
         else
         {
-            if (mid == 0 || arr[mid-1]!=arr[mid])
+            if (mid == 0 || arr[mid-1]==0)
                 return (size-mid);
             else
             {
