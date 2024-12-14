@@ -2,6 +2,7 @@
 #include <list>
 
 using namespace std;
+//Implementation using chaining
 
 // struct is a way in c++ to group variables or members together
 // into a single unit unlike class , struct members are public by default
@@ -23,8 +24,8 @@ struct MyHash
 
     void insert(int key)
     {
-        int i = key % BUCKET;
-        table[i].push_back(key);
+        int i = key % BUCKET; //hash function prime bucket size 
+        table[i].push_back(key); //with no raise to the power is best choice
     }
 
     void removeC(int key)
