@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
 
+//Max sum sub array.
 int MaxSub(int arr[],int size){
     int res = arr[0];
     for(int i = 0;i<size;i++){
@@ -12,7 +13,6 @@ int MaxSub(int arr[],int size){
     }
     return 0;
 }
-
 
 //Kadane's algorithm
 int MaxSub2(int arr[],int size){
